@@ -14,3 +14,23 @@ _book
 *.epub
 *.mobi
 *.pdf
+
+.vscode
+
+# IDEA
+.idea/
+*.iml
+logs/
+log/
+
+# eclipse (Scala IDE)
+.project
+.settings/
+.tags*
+target/
+test-output/
+nohup*
+*.log
+*.swp
+*.pyc
+.sbtserver*
