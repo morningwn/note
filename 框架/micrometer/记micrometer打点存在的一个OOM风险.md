@@ -83,8 +83,8 @@
 -Xmx2048m
 ```
 结果：在不停的运行10分钟左右，项目不行了，因为是使用的nacos，项目被下线了，最后项目还活着，没有OOM，但是在不停的GC，已经对外不可用了。最后的直线下降是因为项目停了
-![图一](/.images/2022-01-18-3.png)
-![图二](/.images/2022-01-18-4.png)
+![图一](https://raw.githubusercontent.com/morningwn/note/main/.images/2022-01-18-3.png)
+![图二](https://raw.githubusercontent.com/morningwn/note/main/.images/2022-01-18-4.png)
 
 ## 解决方案
 1. 限制指标数量
@@ -165,5 +165,5 @@ public class DubboMeterFilter implements MeterFilter {
 ```
 ### 效果
 最后的那个直线下降是我在停下请求后手动GC的效果
-![图一](/.images/2022-01-18-1.png)
-![图二](/.images/2022-01-18-2.png)
+![图一](https://raw.githubusercontent.com/morningwn/note/main/.images/2022-01-18-1.png)
+![图二](https://raw.githubusercontent.com/morningwn/note/main/.images/2022-01-18-2.png)
